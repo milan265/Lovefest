@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home-Lovefest</title>
+		<link rel="shortcut icon" href="slike/lovefest-logo-title.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/> 
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+
+	<body onload="slajdSlika();" onresize="slajdSlika();">
+		<div class="okvir">
+			<header>
+				<div class="sadrzaj-header">
+					<div class="logo">
+						<a href="index.html"><img src="slike/lovefest-logo-header.png" alt="lovefest-logo"/></a>
+					</div>
+					<nav class="meni">
+						<ul>
+							<li><a href="index.html"><span class="fa fa-home"></span></a></li>
+							<li><a href="opis.html">O nama</a></li>
+							<li><a href="program.html">Program</a></li>
+							<li><a href="izvodjaci.html">Izvođači</a></li>
+							<li><a href="galerija.html">Galerija</a></li>
+							<li><a href="sponzori.html">Prijatelji festivala</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+						</ul>
+					</nav>
+					<div class="d-mreze">
+						<ul class="mreze">
+							<li><a href="https://twitter.com/lovefestrs" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/lovefestVB/" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/lovefest.rs/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					<div class="cistac">
+					</div>
+				</div>
+			</header>
+			
+			<div id="slider">
+				<div class="tekst-slajder">
+					<a href="program.html">
+						<img class="slajder-slika fade aktivna" src="slike/slider-program.jpg" alt="Program"/>
+						<p class="tekst fade ">Program</p>
+					</a>
+				</div>
+				<div class="tekst-slajder">
+					<a href="izvodjaci.html">
+						<img class="slajder-slika fade" src="slike/slider-izvodjaci.jpg" alt="Izvođači"/>
+						<p class="tekst fade">Izvođači</p>
+					</a>
+				</div>
+				<div class="tekst-slajder">
+					<a href="galerija.html">
+						<img class="slajder-slika fade" src="slike/slider-galerija.jpg" alt="Galerija"/>
+						<p class="tekst fade">Galerija</p>
+					</a>
+				</div>
+				<div>
+					<a id="pre" onclick="plusSlajd(-1)">&#10094;</a>
+					<a id="sled" onclick="plusSlajd(1)">&#10095;</a>
+				</div>
+				
+				<div style="text-align:center">
+					<span class="tacka" onclick="trenutniSlajd(1)"></span> 
+					<span class="tacka" onclick="trenutniSlajd(2)"></span> 
+					<span class="tacka" onclick="trenutniSlajd(3)"></span> 
+				</div>
+				<div class="cistac">
+				</div>
+			</div>
+			<section class="main">
+			<div class="sadrzaj-main">
+				<div id="vesti">
+					<div class="vest">
+						<div class="slika">
+							<img src="slike/vest1.jpg" alt="vest 1"/>
+						</div>
+						<div class="tekst">
+							<h2>Lovefest među 18 najboljih festivala Evrope</h2>
+							<p>
+								Lovefest ovog puta odabran je za jedan od 18 najboljih festivala elektronske muzike u Evropi.
+								U konkurenciji se našlo čak 87 festivala, a oslanjajući se na kvalitet produkcije, promocije
+								i iskustva publike izabrano je 18 veličanstvenih. Tako se festival ljubavi našao uz rame sa
+								brojnim holandskim i nemačkim festivalima, kao i kultnim gruzijskim GEM festom. Osim hrvatskih
+								festivala Sonus i Outlook, Lovefest je jedini veliki muzički događaj iz regiona kome je pripala
+								titula najboljeg.
+							</p>
+						</div>
+					</div>
+					<div class="vest">
+						<div class="slika">
+							<img src="slike/vest2.png"alt="vest 2"/>
+						</div>
+						<div class="tekst">
+							<h2>Lovefest 2018</h2>
+							<p>
+								Jedinstvena lokacija smeštena u prelepom prirodnom okruženju i prava festivalska atmosfera su ono
+								što izdvaja Lovefest, pa i ne čudi što iz godine u godinu ovaj događaj poseti više od 75000 mladih
+								ljudi iz celog sveta. Za svoje 12. izdanje ovaj Lovefest trajaće jedan dan duže, donosiće više zabave
+								i više muzike na pet različitih bina. Kao i prethodnih godina, dnevni program održaće se na H2O bini
+								na Olimpijskom bazenu, dok se noćni provod održava na preostala četiri stejdža Fire, Blow, 99 i Ultra
+								Energy stejdž. Pored stranih DJ-eva i producenata, nastupiće i veliki broj domaćih izvođača.
+							</p>
+						</div>
+					</div>
+					<div class="cistac">
+					</div>
+				</div>
+				<div id="slike">
+					<div class="slika">
+						<img id="slika-gore-levo" src="slike/slika-gore-levo.jpg" alt="slika1"/>
+					</div>
+					<div class="slika">		
+						<img id="slika-gore-desno" src="slike/slika-gore-desno.jpg" alt="slika2"/>
+					</div>	
+					<div class="slika">	
+						<img id="slika-dole-levo" src="slike/slika-dole-levo.jpg" alt="slika3"/>
+					</div>
+					<div class="slika">	
+						<img id="slika-dole-desno" src="slike/slika-dole-desno.jpg" alt="slika4"/>
+					</div>
+					<div class="cistac">
+					</div>
+					<a href="galerija.html"><input type="button" value="Galerija"/></a>
+				</div>
+				<div id="mapa">
+					<img src="slike/mapa.jpg" alt="mapa" title="Mapa"/>
+				</div>
+				<div id="slika-mapa" class="slika-zoom">
+					<span class="x" id="mapa-x">&times;</span>
+					<img id="slika-mapa-zoom"/>
+				</div>
+			</div>
+			</section>
+			<footer>
+				<div class="sadrzaj-footer">
+					<div class="f-mreze">
+						<ul class="mreze">
+							<li><a href="https://twitter.com/lovefestrs" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/lovefestVB/" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/lovefest.rs/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					<div class="footer-tekst">
+						<p>2018 &copy; COPYRIGHT &#64; LOVEFEST</p>
+						<p>Autor: Milan Savić 2016203834</p>
+					</div>
+					<div class="cistac">
+					</div>
+				</div>
+			</footer>
+			<a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a> 
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/cycle.all.min.js"></script>
+		<script type="text/javascript" src="js/1.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
+		
+	</body>
+</html>
